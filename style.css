@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Orbitron;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.list  {
+    list-style-type: none;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.list-item::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color:#000000;
+    margin: auto;
+    display: block;
+
+}
+
+.list-item:hover::after {
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+.list li:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 200px;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.nav-button {
+    background-color: transparent;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.globe {
+    position: absolute;
+    top: 80px;
+    left: 650px;
+}
+
+.star {
+    position: absolute;
+    top: 170px;
+    left: 1200px;
+}
+
+.star::after {
+    content: url(assets/start.png);
+    position: absolute;
+    top: 330px;
+    right: 650px;
+}
+
+.hero-container-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    top: 283px;
+    left: 650px;
+}
+
+.hero-heading{
+    font-size: xxx-large;
+}
+
+.hero-description {
+    font-family: sans-serif;
+    width: 77%;
+    align-self: center;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.hero-description + div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-email {
+    background-color: transparent;
+    height: 26px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.button-join {
+    background-color: #000000;
+    color: #ffffff;
+    height: 26px;
+    width: 88px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-heading {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icons {
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.icons span img {
+    cursor: pointer;
+}
+
+.square {
+    position: absolute;
+    top: 185px;
+    left: 50px;
+}
+
+.hero-container > div > img {
+    max-height: 430px;
+    position: absolute;
+    top: 115px;
+    left: 48px;
+}
