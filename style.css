@@ -1,151 +1,285 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Orbitron;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+body {
+  background-color: #F5F5F5;
 }
 
-.list  {
-    list-style-type: none;
-    width: 450px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 600;
+header {
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 100vw;
+  background-color: #4617fe;
 }
 
-.list-item::after {
-    content: '';
-    width: 0px;
-    height: 3px;
-    background-color:#000000;
-    margin: auto;
-    display: block;
+.logo {
+  margin: 10px 50px;
+}
+
+.header-text {
+  height: 30vh;
+  line-height: 45px;
+  color: #ffffff;
+  position: relative;
+  top: 38%;
+  left: -13%;
+}
+
+.header-text h2 {
+  font-size: 1.6rem;
+}
+
+nav {
+  order: 2;
+  height: 5vh;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin: 10px;
+  margin-left: 21%;
+}
+
+.nav-item-active {
+  background-color: #ffffff;
+  color: #4515fe;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+nav svg {
+  height: 40px;
+  width: 20px;
+}
+
+.header-image {
+  position: absolute;
+  height: 400px;
+  right: 0%;
+  top: 15%;
+}
+
+.companies {
+  margin: 16px 60px;
+}
+
+.companies a {
+  text-decoration: none;
+  font-family: "Righteous";
+  color: #000000;
+  padding: 0 13px;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.api {
+  margin-top: 6%;
+  margin-left: 70px;
+}
+
+.cards {
+  margin: 4% 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-active {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: -38px;
+  height:200px;
+  width: 300px;
+  box-shadow: 2px 2px 10px 2px rgb(2, 2, 2, 0.5);
+  padding: 20px;
+}
+
+.card-head-active {
+  color: #4515fe;
+}
+
+.card-body {
+  font-size: 12px;
+}
+
+.blog-heading {
+  margin-left: 62px;
+  font-size: 0.9rem;
+}
+
+.blog-cards {
+  margin-left: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  gap: 50px;
+  align-items: center;
+  border-radius: 52px 10px 10px 10px;
+  box-shadow: 2px 2px 10px 2px rgb(2, 2, 2, 0.5);
+}
+
+.blog-image > img {
+  height: 200px;
+}
+
+.blog-content h6 {
+  color: #6b46fd;
+  font-weight: 900;
 
 }
 
-.list-item:hover::after {
-    width: 100%;
-    transition: width 0.3s linear;
+.blog-content h3 {
+  font-weight: 900;
+  font-size: medium; 
 }
 
-.list li:hover {
-    font-weight: bolder;
-    cursor: pointer;
+.blog-content small {
+  font-size: 0.4rem;
 }
 
-.button-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    width: 200px;
+.bottom-one {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.search-icon {
-    cursor: pointer;
+.faq-section {
+  background-color: #E9EDFF;
+  display: flex;
+  justify-content: space-between;
+  height: 40vh;
+  margin-left: 60px;
+  margin-top: 6%;
 }
 
-.nav-button {
-    background-color: transparent;
-    width: 110px;
-    height: 30px;
-    border-radius: 10px;
+.faq-image > img {
+  height: 260px;
+  margin-right: 50px;
 }
 
-.globe {
-    position: absolute;
-    top: 80px;
-    left: 650px;
+.faq-content h2 {
+  padding-top: 20px;
 }
 
-.star {
-    position: absolute;
-    top: 170px;
-    left: 1200px;
+.faq-content h4 {
+  font-weight: 600;
+  font-size: 10px;
+  padding: 12px 0;
 }
 
-.star::after {
-    content: url(assets/start.png);
-    position: absolute;
-    top: 330px;
-    right: 650px;
+.faq-content button {
+  background-color: #5a31fc;
+  font-size: 12px;
+  padding: 8px 35px;
+  margin-left: 3px;
+  border: none;
+  border-radius: 4px;
+  color: white;
 }
 
-.hero-container-right {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    top: 283px;
-    left: 650px;
+.download-section {
+  margin-left: 60px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hero-heading{
-    font-size: xxx-large;
+.download-content h1 {
+  font-weight: 900;
 }
 
-.hero-description {
-    font-family: sans-serif;
-    width: 77%;
-    align-self: center;
-    margin-top: 18px;
-    text-align: center;
+.download-content h1 span {
+  font-weight: 900;
+  font-size: x-large;
 }
 
-.hero-description + div {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.download-email {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: #E9EDFF;
+  margin-right: 40px;
+  width: 400px;
+  align-items: center;
 }
 
-.button-email {
-    background-color: transparent;
-    height: 26px;
-    width: 150px;
-    border-radius: 8px;
+.download-email input {
+  border: none;
+  background-color: transparent;
+    margin-left: 60px;
 }
 
-.button-join {
-    background-color: #000000;
-    color: #ffffff;
-    height: 26px;
-    width: 88px;
-    border-radius: 3px;
-    cursor: pointer;
+.download-email button {
+  background-color: #5a31fc;
+  color: white;
+  font-size: 12px;
+  padding: 6px 26px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 58px;
 }
 
-.contact-heading {
-    margin-top: 60px;
-    margin-bottom: 10px;
-    text-align: center;
+.footer-section {
+  height: 140px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 40px;
+  align-items: center;
+  background-color: #4718fe;
+  color: white;
 }
 
-.icons {
-    /* border: 2px solid yellow; */
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-.icons span img {
-    cursor: pointer;
+.footer-left {
+  margin: 8% 0;
 }
 
-.square {
-    position: absolute;
-    top: 185px;
-    left: 50px;
+.footer-right {
+  margin: 8% 0;
 }
 
-.hero-container > div > img {
-    max-height: 430px;
-    position: absolute;
-    top: 115px;
-    left: 48px;
+.list{
+  list-style-type: none;
+  display: flex;
+  margin-top: 25px;
+}
+
+.list li{
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+ .logos-list{
+  list-style-type: none;
+  display: flex;
+  margin-top: 25px;
+}
+
+.logos-list li{
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.footer-logos {
+  padding: 0px 10px;
 }
